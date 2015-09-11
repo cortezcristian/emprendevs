@@ -93,7 +93,7 @@ angular
     'ngSanitize',
     'ngTouch',
     'youtube-embed',
-    'timer',
+    'angularMoment',
     'restangular'
   ])
   .config(function ($routeProvider, $locationProvider, RestangularProvider) {
