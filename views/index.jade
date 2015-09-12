@@ -2,6 +2,17 @@ extends layout
 
 block content
   .row
+    .col-sm-8.col-sm-offset-2
+      section.neck-step-1
+        h1.big-main-logo.animated.flipInY
+          i.ion-code-working
+          span Empren
+            b Devs
+  .row.color-1
+    .col-sm-8.col-sm-offset-2
+      section.neck-step-2
+        div(flipclock)
+  .row
     .neck
       #main-carousel.carousel.carousel-bg.slide(data-ride='carousel', data-interval="30000", hero)
         // Indicators
@@ -35,17 +46,6 @@ block content
   .row.our-main-content
     .col-sm-10.col-sm-offset-1
       div
-        p
-          // moment("23/10/2015 9:00", "D/M/YYYY H:mm").valueOf();
-          timer(end-time='1445569200000')
-          timer(interval='1000', countdown='30', end-time='1445569200000')
-            div {{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.
-          timer#countdown(interval='1000', countdown='30', end-time='1445569200000')
-            | Remaining time : {{days}} second{{secondsS}} ({{progressBar}}%). Activity? {{displayProgressActive}}
-            div {{days}} days, {{hours}} hours, {{minutes}} minutes, {{seconds}} seconds.
-            .progress.progress-striped(class='{{displayProgressActive}}', style='height: 30px;')
-              .bar(style='min-width: 2em; height: 30px; width: {{progressBar}}%;')
-                | {{ progressBar }}%
         .thumbnail
           .caption
             h3 #{__("Install anyandgo")}  

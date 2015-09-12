@@ -70,7 +70,7 @@ html(lang='en',ng-app="anyandgoApp")
       - }
 
   body.container-fluid
-    .row
+    .row.hide
       include ./partials/site-menu
     block content
     block footer
@@ -123,6 +123,7 @@ html(lang='en',ng-app="anyandgoApp")
     script(src='/scripts/site/controllers/sample-edit.js')
     script(src='/scripts/site/directives/langsupport.js')
     script(src='/scripts/site/directives/metismenu.js')
+    script(src='/scripts/site/directives/flipclock.js')
     script(src='/scripts/site/directives/hero.js')
     //site:app:scripts:end
     //-<!-- endbuild -->
