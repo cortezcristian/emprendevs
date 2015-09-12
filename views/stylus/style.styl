@@ -8,6 +8,16 @@ body
     height: auto;
   .anyandgo-color
     color: #C9CFFE !important;
+  .navbar-inverse
+    background: transparent
+    & .navbar-collapse, & .navbar-form
+      border-color: #16a085
+    &:hover
+      background: #1abc9c
+    .navbar-nav>li>a
+      color: #ccc
+      &:hover, &:active
+        background: #16a085
   h1.big-main-logo 
     font-size: 60px;
     text-align: center
@@ -319,6 +329,11 @@ body
   max-width: 650px
   margin: 0 auto
   padding-left: 14px
+  .flip-clock-dot
+    background: #16a085
+    box-shadow: 0 0 0 #16a085
+  .flip
+    box-shadow: 0 2px 5px #16a085
   .flip-clock-label
     color: #fff
     font-size: 20px

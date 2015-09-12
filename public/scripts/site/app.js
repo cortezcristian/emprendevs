@@ -1,6 +1,11 @@
 'use strict';
 $(document).ready(function(){
 
+    $('.neck-step-1').on('activate.bs.scrollspy', function (e) {
+      // do something…
+      console.log(e);
+    });
+
     var findBootstrapEnvironment = function() {
         var envs = ['xs', 'sm', 'md', 'lg'];
 
