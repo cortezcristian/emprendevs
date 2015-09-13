@@ -70,7 +70,7 @@ html(lang='en',ng-app="anyandgoApp")
       - }
 
   body.container-fluid
-    .row
+    .row.hide
       include ./partials/site-menu
     block content
     block footer
@@ -107,6 +107,7 @@ html(lang='en',ng-app="anyandgoApp")
     script(src='/components/moment/moment.js')
     script(src='/components/angular-moment/angular-moment.js')
     script(src='/components/FlipClock/compiled/flipclock.js')
+    script(src='/components/onScreen/jquery.onscreen.js')
     //endbower
     //-<!-- endbuild -->
     - } else {

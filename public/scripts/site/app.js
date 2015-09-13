@@ -1,9 +1,27 @@
 'use strict';
 $(document).ready(function(){
 
-    $('.neck-step-1').on('activate.bs.scrollspy', function (e) {
-      // do something…
-      console.log(e);
+    $('section').onScreen({
+       container: window,
+       direction: 'vertical',
+       doIn: function(e) {
+         // Do something to the matched elements as they come in
+          console.log("IN", $(this));
+         $(this).removeClass("fadeOut");
+         $(this).addClass("animated fadeIn");
+       },
+       doOut: function() {
+         // Do something to the matched elements as they get off scren
+          console.log("OUT", $(this));
+         $(this).removeClass("fadeIn");
+         $(this).addClass("animated fadeOut");
+       },
+       tolerance: 0,
+       throttle: 50,
+       toggleClass: 'onScreen',
+       lazyAttr: null,
+       lazyPlaceholder: 'someImage.jpg',
+       debug: false
     });
 
     var findBootstrapEnvironment = function() {

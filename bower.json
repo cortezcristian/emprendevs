@@ -32,6 +32,7 @@
     "angular-youtube-mb": "~1.1.0",
     "ionicons": "~2.0.1",
     "angular-moment": "~0.10.3",
-    "FlipClock": "~0.7.7"
+    "FlipClock": "~0.7.7",
+    "onScreen": "*"
   }
 }
