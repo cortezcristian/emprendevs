@@ -1,6 +1,10 @@
 'use strict';
 $(document).ready(function(){
 
+    $('.go-up').click(function(){
+        $(window).scrollTo(0, 800);
+    });
+
     $('section').onScreen({
        container: window,
        direction: 'vertical',

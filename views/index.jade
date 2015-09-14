@@ -29,7 +29,7 @@ block content
           li
             p
               i.fa.fa-calendar
-            p 23/10
+            p 25/10
             p Premiación
   .arrow-separator.arrow-theme
   .row.color-2
@@ -67,11 +67,22 @@ block content
               img(src="./sponsors/logo-gameiq2.png")
   .arrow-separator.arrow-grey
   .row.color-4
-    .col-sm-8.col-sm-offset-2
+    .col-sm-8.col-sm-offset-2.con-social-networks
       section.neck-step-5
-        p Sample
-        p Give Me your e-mail 
-  .row
+        p.text-center
+          a.go-up(href="#")
+            i.ion-arrow-up-b
+        ul.list-inline.social-networks-list
+          li
+            a(href="https://twitter.com/emprendevs/", target="_blank")
+              i.ion-social-twitter
+          li
+            a(href="https://www.facebook.com/emprendevs", target="_blank")
+              i.ion-social-facebook
+          li
+            a(href="mailto:contacto@emprendevs.com", target="_blank")
+              i.ion-ios-email-outline
+  //.row
     .neck
       #main-carousel.carousel.carousel-bg.slide(data-ride='carousel', data-interval="30000", hero)
         // Indicators
@@ -102,7 +113,7 @@ block content
           span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
           span.sr-only Next
       
-  .row.our-main-content
+  //.row.our-main-content
     .col-sm-10.col-sm-offset-1
       div
         .thumbnail

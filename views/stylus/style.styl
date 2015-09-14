@@ -345,6 +345,7 @@ section.animated.fadeIn {
 
 // Desafio
 .desafio-con
+  text-align: center
   color: #fff
   .tech
     padding: 10px 0;
@@ -352,9 +353,10 @@ section.animated.fadeIn {
     height: 120px
     width: 110px
     display: inline-block
+    opacity: 0.8
     background: url('../sponsors/anyandgo-eq-mean.png') no-repeat;
     &:hover
-      opacity: 0.9
+      opacity: 1
   .tech-anyandgo
     background-position: -17px -12px
   .tech-mongo
@@ -369,8 +371,35 @@ section.animated.fadeIn {
 
 // Auspiciantes
 .auspiciantes-con
+  text-align: center
   img
     max-width: 200px
+
+// Social Networks
+.con-social-networks
+  text-align: center
+  .social-networks-list
+    padding-top: 180px
+    li
+      padding: 20px
+    a
+      font-size: 55px;
+      color: #999;
+      &:hover
+        color: #ccc;
+.go-up
+  display: inline-block
+  border-radius: 5px
+  background: #ccc;
+  color: #fff
+  font-size: 30px
+  width: 45px
+  height: 45px
+  line-height: 45px
+  &:hover, &:active
+    opacity: 0.9
+    background: #ccc;
+    color: #fff !important
 
 
 // Flip Clock 
