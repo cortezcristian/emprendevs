@@ -54,7 +54,7 @@
     },
     "analytics": {
         "enabled" : true,
-        "tracking": "UA-XXXXX-X"
+        "tracking": "UA-67565556-1"
     },
     "csrf": "disabled",
     "cors": "enabled",
