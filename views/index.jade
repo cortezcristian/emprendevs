@@ -11,7 +11,8 @@ block content
         p.sub-line.text-center(style="margin-bottom:35px;") 
           | 
           br
-          | La primer hackathon para programadores FullStack
+          | La primer hackathon para programadores  
+          i fullstack
         p.sub-line.text-center
           a(href="https://www.google.com.ar/maps/place/Grupo+Polo+Tecnologico+Rosario+S.H./@-32.9474163,-60.6353579,17z/data=!4m6!1m3!3m2!1s0x95b7ab195f405e7d:0xe3d4a9ba0c7fe007!2sGrupo+Polo+Tecnologico+Rosario+S.H.!3m1!1s0x95b7ab195f405e7d:0xe3d4a9ba0c7fe007")
             i.fa.fa-map-marker.fa-fw
@@ -25,17 +26,17 @@ block content
           li
             p
               i.fa.fa-calendar
-            p 23/10
+            p.highlight 23/10
             p Kickstart
           li
             p 
               i.fa.fa-calendar
-            p 24/10
+            p.highlight 24/10
             p Hackathon
           li
             p
               i.fa.fa-calendar
-            p 25/10
+            p.highlight 25/10
             p Premiación
   .arrow-separator.arrow-theme
   .row.color-2
@@ -77,7 +78,7 @@ block content
       section.neck-step-4.jurado-con
         h2 Que pertenezca a alguna de estas categorías:
         div.col-sm-8.col-sm-offset-2
-          ul.fa-ul.text-left
+          ul.fa-ul.text-left.lista-categorias
             li
               i.fa-li.fa.fa-check-circle
               | Educativas, E-learning, Gestión de Contenidos, Gestión de la Calidad Total
@@ -106,10 +107,10 @@ block content
     .col-sm-10.col-sm-offset-1.criterios-con
       section.neck-step-5
         h2 Jurado
-        ul.list-inline
+        ul.list-inline.lista-jurado
           li
             img.img-circle.img-responsive.center-block(src="img/jurados/amotta-foto.jpg")
-            | Alejandro Motta
+            p.label-n Alejandro Motta
             ul.list-inline
               li
                 a(href="https://ar.linkedin.com/in/alejandromotta", target="_blank")
@@ -119,7 +120,7 @@ block content
                   i.fa.fa-twitter-square.fa-2x
           li
             img.img-circle.img-responsive.center-block(src="img/jurados/yibarra-foto.jpg")
-            | Yanina Ibarra
+            p.label-n Yanina Ibarra
             ul.list-inline
               li  
                 a(href="https://ar.linkedin.com/in/yaninaibarra", target="_blank")
@@ -129,7 +130,7 @@ block content
                     i.fa.fa-twitter-square.fa-2x
           li
             img.img-circle.img-responsive.center-block(src="img/jurados/dichiazza-foto.jpg")
-            | Leandro Di Chiazza
+            p.label-n Leandro Di Chiazza
             ul.list-inline
               li
                 a(href="https://ar.linkedin.com/in/leandrodichiazza", target="_blank")
@@ -139,7 +140,7 @@ block content
                   i.fa.fa-twitter-square.fa-2x
           li
             img.img-circle.img-responsive.center-block(src="img/jurados/ccortez-foto.jpg")
-            | Cristian Cortez
+            p.label-n Cristian Cortez
             ul.list-inline
               li
                 a(href="https://ar.linkedin.com/in/cortezcristian", target="_blank")
@@ -152,7 +153,7 @@ block content
 
         h2 Criterios de evaluación
         div.col-sm-10.col-sm-offset-2
-          ul.fa-ul.text-left
+          ul.fa-ul.text-left.lista-criterios
             li
               i.fa-li.fa.fa-lightbulb-o
               | Factibilidad de concreción, innovación, posibilidad de negocio
