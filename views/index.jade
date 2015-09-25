@@ -13,6 +13,26 @@ block content
           br
           | La primer hackathon para programadores  
           i fullstack
+        #fb-root
+        script.
+          (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        .row(style="padding-bottom:20px;")
+          .col-sm-9.col-sm-offset-3.text-center
+            .row
+              .col-sm-3.share-social
+                .fb-like(data-href='https://www.facebook.com/emprendevs', data-layout='button')
+              .col-sm-3.share-social
+                .fb-share-button(data-href='http://www.emprendevs.com', data-layout='button_count', style='margin-bottom:2px;')
+              .col-sm-3.share-social
+                a.twitter-share-button(href='https://twitter.com/share', data-url='http://www.emprendevs.com') Tweet
+                script.
+                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
         p.sub-line.text-center
           a(href="https://www.google.com.ar/maps/place/Grupo+Polo+Tecnologico+Rosario+S.H./@-32.9474163,-60.6353579,17z/data=!4m6!1m3!3m2!1s0x95b7ab195f405e7d:0xe3d4a9ba0c7fe007!2sGrupo+Polo+Tecnologico+Rosario+S.H.!3m1!1s0x95b7ab195f405e7d:0xe3d4a9ba0c7fe007")
             i.fa.fa-map-marker.fa-fw
