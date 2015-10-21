@@ -150,6 +150,11 @@ app.get('/admin', function (req, res) {
 app.get('/docs', function (req, res) {
     res.render('docs', { title: 'Docs', section: 'Docs' });
 });
+
+// ### Agenda Page
+app.get('/agenda', function (req, res) {
+    res.render('agenda', { title: 'Agenda', section: 'Agenda' });
+});
 /* page:public:end */
 
 // ## 2. Admin Routes

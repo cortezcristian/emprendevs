@@ -835,3 +835,61 @@ section.animated.fadeIn {
 .sidebar-nav-item-icon {
   padding-right: 5px;
 }
+
+/* Estilos de la agenda */
+.agenda {  }
+
+/* Dates */
+.agenda .agenda-date { width: 170px; }
+.agenda .agenda-date .dayofmonth {
+  width: 40px;
+  font-size: 36px;
+  line-height: 36px;
+  float: left;
+  text-align: right;
+  margin-right: 10px; 
+}
+.agenda .agenda-date .shortdate {
+  font-size: 0.75em; 
+}
+
+
+/* Times */
+.agenda .agenda-time { width: 140px; } 
+
+
+/* Events */
+.agenda .agenda-events {  } 
+.agenda .agenda-events .agenda-event {  } 
+
+
+/** Agenda Speaker **/
+table td.speaker {
+  position: relative;
+  color: #5c5f74;
+}
+table td.speaker img {
+  float: left;
+}
+table td.speaker h3,
+table td.speaker h4 {
+  margin: 0 0 0 120px;
+  font: normal normal 400 1em 'Lora', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  padding-right: 48px;
+}
+table td.speaker h4 {
+  color: #bebfc7;
+}
+table td.speaker a.cta {
+  right: 0;
+  width: 43px;
+  height: 43px;
+  background: url("../images/fpo-arrow-link.png") no-repeat;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+}
