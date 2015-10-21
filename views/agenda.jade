@@ -1,0 +1,188 @@
+extends layout
+
+block content
+  .row
+    .col-sm-8.col-sm-offset-2
+      section.neck-step-1
+        h1.big-main-logo.animated.flipInY
+          i.ion-code-working
+           b  Agenda
+        p.sub-line.text-center(style="margin-bottom:29px;") 
+          | 
+          br
+          | Enterate más ...
+        .agenda
+          .table-responsive
+            table.table.table-condensed.table-bordered
+              thead
+                tr
+                  th Date
+                  |                         
+                  th Time
+                  |                         
+                  th Event
+              |                 
+              tbody
+                // Single event in a single day
+                tr
+                  td.agenda-date(rowspan='1')
+                    .dayofmonth 26
+                    |                             
+                    .dayofweek Saturday
+                    |                             
+                    .shortdate.text-muted July, 2014
+                  |                         
+                  td.agenda-time
+                    | 5:30 AM
+                  |                         
+                  td.agenda-events.speaker
+                    .agenda-event
+                      a(href='#')
+                        img(src='img/jurados/ccortez-foto.jpg', alt='Cristian Cortez')
+                      a(href='#')
+                        h3 Cristian Cortez
+                      div
+                        h4 Anyandgo: The new horizon
+                        p Tema de la charla
+                // Multiple events in a single day (note the rowspan)
+                tr
+                  td.agenda-date(rowspan='3')
+                    .dayofmonth 24
+                    |                             
+                    .dayofweek Thursday
+                    |                             
+                    .shortdate.text-muted July, 2014
+                  |                         
+                  td.agenda-time
+                    | 8:00 - 9:00 AM
+                  |                         
+                  td.agenda-events
+                    .agenda-event
+                      | Doctor&apos;s Appointment
+                |                     
+                tr
+                  td.agenda-time
+                    | 10:15 AM - 12:00 PM
+                  |                         
+                  td.agenda-events
+                    .agenda-event
+                      | Meeting with executives
+                |                     
+                tr
+                  td.agenda-time
+                    | 7:00 - 9:00 PM
+                  |                         
+                  td.agenda-events
+                    .agenda-event
+                      | Aria&apos;s dance recital
+  .arrow-separator.arrow-white
+  //.arrow-separator.arrow-theme
+  .row.color-2
+    .col-sm-10.col-sm-offset-1
+      section.neck-step-3.desafio-con
+        h2 
+          | 13 de Noviembre
+             
+        .col-sm-10.col-sm-offset-1
+          ul.fa-ul.text-left.lista-categorias
+            li
+              i.fa-li.fa.fa-calendar-times-o 
+              |10am · Inicia la pre inscripción
+            li
+              i.fa-li.fa.fa-check-circle
+              | Los participantes deberán formar equipos de 3 a 5 personas 
+              | y pre-inscribirse a través de esta web durante los 15 días previos al evento  
+            li
+              i.fa-li.fa.fa-check-circle
+              | Los organizadores anunciarán la apertura a dicha inscripción para una cantidad
+              | limitada de equipos
+            li
+              i.fa-li.fa.fa-check-circle
+              | Los equipos tendrán 48 horas a partir del inicio del concurso para crear una aplicación web desde cero
+            li
+              i.fa-li.fa.fa-check-circle
+              | Al finalizar el jurado elegirá a un ganador teniendo en cuenta los criterios de evaluación detallados en las 
+              | Bases y Condiciones de la Competencia 
+        p.text-center
+          a.button(href="https://docs.google.com/document/d/1ZEy6cX_3-LT4gJPxTU6_eT3JORd_tiulDJLi3h9dFHc/edit?usp=sharing", target="_blank") Ver Bases y Condiciones
+  .arrow-separator.arrow-theme
+  .row.color-3
+    .col-sm-8.col-sm-offset-2.con-social-networks
+      section.neck-step-7
+        p.text-center
+          a.go-up(href="#")
+            i.ion-arrow-up-b
+        ul.list-inline.social-networks-list
+          li
+            a(href="https://twitter.com/emprendevs/", target="_blank")
+              i.ion-social-twitter
+          li
+            a(href="https://www.facebook.com/emprendevs", target="_blank")
+              i.ion-social-facebook
+          li
+            a(href="mailto:emprendevs@gmail.com", target="_blank")
+              i.ion-ios-email-outline
+          li
+            a(href="https://www.linkedin.com/grp/home?gid=8386827", target="_blank")
+              i.ion-social-linkedin
+          li
+            a(href="https://plus.google.com/u/0/102479694016638575862", target="_blank")
+              i.ion-social-googleplus
+        p.sub-line.text-center
+          | &#8226; Aprendé, construí y divertite &#8226;
+        p.sub-line.text-center
+          a(href="https://docs.google.com/document/d/1ZEy6cX_3-LT4gJPxTU6_eT3JORd_tiulDJLi3h9dFHc/edit?usp=sharing", target="_blank") Bases y Condiciones de la Competencia 
+  //.row
+    .neck
+      #main-carousel.carousel.carousel-bg.slide(data-ride='carousel', data-interval="30000", hero)
+        // Indicators
+        ol.carousel-indicators
+          li.active(data-target='#main-carousel', data-slide-to='0')
+          li(data-target='#main-carousel', data-slide-to='1')
+        
+        // Wrapper for slides
+        .carousel-inner(role='listbox')
+          .item.active
+            .carousel-caption(data-animation="animated flipInY")
+              h2(data-animation="animated bounceInDown") #{__("Get Ready")}
+              p.text-center
+                span.text-center(data-animation="animated zoomInRight")
+                  img(src="img/logos/anyandgo-eq-mean.png",style="max-width: 400px;")
+          .item
+            .carousel-caption(data-animation="animated flipInY")
+              h2(data-animation="animated flip") #{__("Innovate")}
+              p
+                span(data-animation="animated rotateIn")  $ [sudo] npm install anyandgo-cli
+                span(data-animation="animated rollIn")  $ anyandgo init my-new-project 
+        
+        // Controls
+        a.left.carousel-control(href='#main-carousel', role='button', data-slide='prev')
+          span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+          span.sr-only Previous
+        a.right.carousel-control(href='#main-carousel', role='button', data-slide='next')
+          span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+          span.sr-only Next
+      
+  //.row.our-main-content
+    .col-sm-10.col-sm-offset-1
+      div
+        .thumbnail
+          .caption
+            h3 #{__("Install anyandgo")}  
+            pre
+              code.language-bash $ [sudo] npm install -g anyandgo-cli 
+
+            h3 Create a new project 
+            pre
+              code.language-bash 
+              | $ anyandgo init mynewproject
+              |    You have successfully created the anyandgo project
+              |    Try:
+              |         cd mynewproject
+              |         npm install && bower install && grunt
+            h3 #{__("MEAN Framework")}  
+            div(style="min-height: 100px;")
+              p Anyandgo let you create blazing fast, scalable web applications using MongoDB, Express, Node.JS and AngularJS. 
+              a.btn.btn-default(href='/docs', role='button')
+                i.fa.fa-book(style="padding-right:10px")
+                | #{__("Read Docs")}

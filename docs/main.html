@@ -234,7 +234,7 @@ according to their roles</p>
             </div>
             
             <div class="content"><div class='highlight'><pre>app.get(<span class="hljs-string">'/'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
-    res.render(<span class="hljs-string">'index'</span>, { title: <span class="hljs-string">'anyandgo'</span>, section: <span class="hljs-string">'Home'</span> });
+    res.render(<span class="hljs-string">'index'</span>, { title: <span class="hljs-string">'EmprenDevs'</span>, section: <span class="hljs-string">'Home'</span> });
 });
 
 <span class="hljs-comment">/* page:public:start */</span></pre></div></div>
@@ -413,7 +413,7 @@ console.log(“E—&gt;”, errors);</p>
         }, {
             from: config.mail.auth.user, 
             to: config.mail.contact,
-            subject: <span class="hljs-string">'anyandgo'</span>,
+            subject: <span class="hljs-string">'EmprenDevs'</span>,
             text: msg+<span class="hljs-string">' Sent from anyandgo'</span>
         }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, response</span>)</span>{
            <span class="hljs-keyword">if</span> ( error ) {
@@ -463,8 +463,7 @@ console.log(“E—&gt;”, errors);</p>
             
             <div class="content"><div class='highlight'><pre>app.get(<span class="hljs-string">'/docs'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
     res.render(<span class="hljs-string">'docs'</span>, { title: <span class="hljs-string">'Docs'</span>, section: <span class="hljs-string">'Docs'</span> });
-});
-<span class="hljs-comment">/* page:public:end */</span></pre></div></div>
+});</pre></div></div>
             
         </li>
         
@@ -475,10 +474,14 @@ console.log(“E—&gt;”, errors);</p>
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-20">&#182;</a>
               </div>
-              <h2 id="2-admin-routes">2. Admin Routes</h2>
-<hr>
+              <h3 id="agenda-page">Agenda Page</h3>
 
             </div>
+            
+            <div class="content"><div class='highlight'><pre>app.get(<span class="hljs-string">'/agenda'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+    res.render(<span class="hljs-string">'agenda'</span>, { title: <span class="hljs-string">'Agenda'</span>, section: <span class="hljs-string">'Agenda'</span> });
+});
+<span class="hljs-comment">/* page:public:end */</span></pre></div></div>
             
         </li>
         
@@ -489,13 +492,10 @@ console.log(“E—&gt;”, errors);</p>
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-21">&#182;</a>
               </div>
-              <h3 id="login">Login</h3>
+              <h2 id="2-admin-routes">2. Admin Routes</h2>
+<hr>
 
             </div>
-            
-            <div class="content"><div class='highlight'><pre>app.get(<span class="hljs-string">'/admin'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
-    res.render(<span class="hljs-string">'admin-index'</span>, { title: <span class="hljs-string">'anyandgo'</span>, section: <span class="hljs-string">'Admin Login'</span> });
-});</pre></div></div>
             
         </li>
         
@@ -506,12 +506,12 @@ console.log(“E—&gt;”, errors);</p>
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-22">&#182;</a>
               </div>
-              <h3 id="panel">Panel</h3>
+              <h3 id="login">Login</h3>
 
             </div>
             
-            <div class="content"><div class='highlight'><pre>app.get(<span class="hljs-string">'/admin/config'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
-    res.render(<span class="hljs-string">'admin-config'</span>, { title: <span class="hljs-string">'anyandgo'</span>, section: <span class="hljs-string">'Admin Panel'</span> });
+            <div class="content"><div class='highlight'><pre>app.get(<span class="hljs-string">'/admin'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+    res.render(<span class="hljs-string">'admin-index'</span>, { title: <span class="hljs-string">'EmprenDevs'</span>, section: <span class="hljs-string">'Admin Login'</span> });
 });</pre></div></div>
             
         </li>
@@ -527,12 +527,8 @@ console.log(“E—&gt;”, errors);</p>
 
             </div>
             
-            <div class="content"><div class='highlight'><pre>app.get(<span class="hljs-string">'/admin/panel'</span>, 
-    <span class="hljs-comment">/* route:autorizers:start*/</span>
-    adminAuth.autorizer,
-    <span class="hljs-comment">/* route:autorizers:end */</span>
-    <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
-    res.render(<span class="hljs-string">'admin-panel'</span>, { title: <span class="hljs-string">'anyandgo'</span>, section: <span class="hljs-string">'Admin Panel'</span> });
+            <div class="content"><div class='highlight'><pre>app.get(<span class="hljs-string">'/admin/config'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+    res.render(<span class="hljs-string">'admin-config'</span>, { title: <span class="hljs-string">'EmprenDevs'</span>, section: <span class="hljs-string">'Admin Panel'</span> });
 });</pre></div></div>
             
         </li>
@@ -544,10 +540,17 @@ console.log(“E—&gt;”, errors);</p>
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-24">&#182;</a>
               </div>
-              <h2 id="3-public-rest">3. Public Rest</h2>
-<hr>
+              <h3 id="panel">Panel</h3>
 
             </div>
+            
+            <div class="content"><div class='highlight'><pre>app.get(<span class="hljs-string">'/admin/panel'</span>, 
+    <span class="hljs-comment">/* route:autorizers:start*/</span>
+    adminAuth.autorizer,
+    <span class="hljs-comment">/* route:autorizers:end */</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+    res.render(<span class="hljs-string">'admin-panel'</span>, { title: <span class="hljs-string">'EmprenDevs'</span>, section: <span class="hljs-string">'Admin Panel'</span> });
+});</pre></div></div>
             
         </li>
         
@@ -558,7 +561,8 @@ console.log(“E—&gt;”, errors);</p>
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-25">&#182;</a>
               </div>
-              <p><a href="https://github.com/florianholzapfel/express-restify-mongoose">https://github.com/florianholzapfel/express-restify-mongoose</a></p>
+              <h2 id="3-public-rest">3. Public Rest</h2>
+<hr>
 
             </div>
             
@@ -570,6 +574,19 @@ console.log(“E—&gt;”, errors);</p>
               
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-26">&#182;</a>
+              </div>
+              <p><a href="https://github.com/florianholzapfel/express-restify-mongoose">https://github.com/florianholzapfel/express-restify-mongoose</a></p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-27">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-27">&#182;</a>
               </div>
               <p>CORS Interceptors</p>
 
@@ -593,11 +610,11 @@ console.log(“E—&gt;”, errors);</p>
         </li>
         
         
-        <li id="section-27">
+        <li id="section-28">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-27">&#182;</a>
+                <a class="pilcrow" href="#section-28">&#182;</a>
               </div>
               <p>GET /api/v1/samples</p>
 
@@ -620,11 +637,11 @@ console.log(“E—&gt;”, errors);</p>
         </li>
         
         
-        <li id="section-28">
+        <li id="section-29">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-28">&#182;</a>
+                <a class="pilcrow" href="#section-29">&#182;</a>
               </div>
               <h2 id="4-crud-forms">4. Crud Forms</h2>
 <hr>
@@ -634,11 +651,11 @@ console.log(“E—&gt;”, errors);</p>
         </li>
         
         
-        <li id="section-29">
+        <li id="section-30">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-29">&#182;</a>
+                <a class="pilcrow" href="#section-30">&#182;</a>
               </div>
               <p><a href="https://github.com/oJshua/mongoose-forms">https://github.com/oJshua/mongoose-forms</a></p>
 
@@ -649,11 +666,11 @@ console.log(“E—&gt;”, errors);</p>
         </li>
         
         
-        <li id="section-30">
+        <li id="section-31">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-30">&#182;</a>
+                <a class="pilcrow" href="#section-31">&#182;</a>
               </div>
               <p>mongooseForms.bindHelpers(Handlebars, ‘bootstrap’);</p>
 
@@ -674,11 +691,11 @@ console.log(“E—&gt;”, errors);</p>
         </li>
         
         
-        <li id="section-31">
+        <li id="section-32">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-31">&#182;</a>
+                <a class="pilcrow" href="#section-32">&#182;</a>
               </div>
               <p>delete SampleForm.options.fields[“<strong>v”];
 SampleForm.options.maps[“</strong>v”] = false;</p>
@@ -706,11 +723,11 @@ SampleForm.options.maps[“</strong>v”] = false;</p>
         </li>
         
         
-        <li id="section-32">
+        <li id="section-33">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-32">&#182;</a>
+                <a class="pilcrow" href="#section-33">&#182;</a>
               </div>
               <p>Override type with ngoform setting</p>
 
@@ -728,11 +745,11 @@ SampleForm.options.maps[“</strong>v”] = false;</p>
         </li>
         
         
-        <li id="section-33">
+        <li id="section-34">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-33">&#182;</a>
+                <a class="pilcrow" href="#section-34">&#182;</a>
               </div>
               <p>form.options.fields[“name”].template = ‘Lala’;</p>
 
@@ -760,11 +777,11 @@ SampleForm.options.maps[“</strong>v”] = false;</p>
         </li>
         
         
-        <li id="section-34">
+        <li id="section-35">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-34">&#182;</a>
+                <a class="pilcrow" href="#section-35">&#182;</a>
               </div>
               <p>var form = mongooseForms.Bridge(new Sample(), SampleForm).getForm();</p>
 
@@ -773,7 +790,7 @@ SampleForm.options.maps[“</strong>v”] = false;</p>
             <div class="content"><div class='highlight'><pre>    <span class="hljs-keyword">var</span> formHTMl = Handlebars.helpers.renderForm(form);
     
     <span class="hljs-built_in">console</span>.log(formHTMl);
-    res.render(<span class="hljs-string">'forms'</span>, { title: <span class="hljs-string">'anyandgo'</span>, section: <span class="hljs-string">'Form'</span>, form: formHTMl, mname: req.params.modelname });
+    res.render(<span class="hljs-string">'forms'</span>, { title: <span class="hljs-string">'EmprenDevs'</span>, section: <span class="hljs-string">'Form'</span>, form: formHTMl, mname: req.params.modelname });
 });
 
 app.get(<span class="hljs-string">'/forms/sample/edit'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
@@ -784,23 +801,9 @@ app.get(<span class="hljs-string">'/forms/sample/edit'</span>, <span class="hljs
         <span class="hljs-keyword">var</span> formHTMl = Handlebars.helpers.renderForm(form);
     
         <span class="hljs-built_in">console</span>.log(formHTMl);
-        res.render(<span class="hljs-string">'forms'</span>, { title: <span class="hljs-string">'anyandgo'</span>, section: <span class="hljs-string">'Form'</span>, form: formHTMl });
+        res.render(<span class="hljs-string">'forms'</span>, { title: <span class="hljs-string">'EmprenDevs'</span>, section: <span class="hljs-string">'Form'</span>, form: formHTMl });
     });
 });</pre></div></div>
-            
-        </li>
-        
-        
-        <li id="section-35">
-            <div class="annotation">
-              
-              <div class="pilwrap ">
-                <a class="pilcrow" href="#section-35">&#182;</a>
-              </div>
-              <h2 id="5-super-admin-tasks">5. Super Admin Tasks</h2>
-<hr>
-
-            </div>
             
         </li>
         
@@ -810,6 +813,20 @@ app.get(<span class="hljs-string">'/forms/sample/edit'</span>, <span class="hljs
               
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-36">&#182;</a>
+              </div>
+              <h2 id="5-super-admin-tasks">5. Super Admin Tasks</h2>
+<hr>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-37">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-37">&#182;</a>
               </div>
               
             </div>
@@ -827,11 +844,11 @@ app.get(<span class="hljs-string">'/forms/sample/edit'</span>, <span class="hljs
         </li>
         
         
-        <li id="section-37">
+        <li id="section-38">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-37">&#182;</a>
+                <a class="pilcrow" href="#section-38">&#182;</a>
               </div>
               <p>TODO: prevent auto-reboot when running with grunt, securitize mname parameter</p>
 
