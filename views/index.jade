@@ -343,6 +343,131 @@ block content
         p.hide Serán revelados muy pronto...
         p.text-center
           a.button(href="mailto:emprendevs@gmail.com?subject=Solicitud para auspiciar el evento", target="_blank") Auspiciar el Evento
+  
+        h2 Agenda
+
+          .agenda
+            .table-responsive
+               table.table.table-condensed.table-bordered
+                 thead
+                   tr
+                     th Día
+                     |                         
+                     th Hora
+                     |                         
+                     th Evento
+                 |                 
+                 tbody
+                   // Multiple events in a single day (note the rowspan)
+                   tr
+                     td.agenda-date(rowspan='3')
+                       .dayofmonth 13
+                       |                             
+                       .dayofweek Viernes
+                       |                             
+                       .shortdate.text-muted Noviembre, 2015
+                     |                         
+                     td.agenda-time
+                       | 14:00 - 15:00 HS
+                     |                         
+                     td.agenda-event.speaker
+                       .agenda-event
+                           img.img-circle.img-responsive.center-block(src='img/jurados/amotta-foto.jpg', style='width: 100px;')
+                           h3 Alejandro Motta
+                         div
+                           h5 Charla: El mundo de los negocios
+                           | Negocios en Argentina
+                   |                     
+                   tr
+                     td.agenda-time
+                       | 15:00 - 16:00 HS
+                     |                         
+                     td.agenda-event.speaker
+                       .agenda-event
+                           img.img-circle.img-responsive.center-block(src='img/jurados/yibarra-foto.jpg', style='width: 100px;')
+                           h3 Yanina Ibarra
+                         div
+                           h5 Charla2: descripción
+                           | Usabilidad
+                   |                     
+                   tr
+                     td.agenda-time
+                       | 16:00 - 17:00 HS
+                     |                         
+                     td.agenda-event.speaker
+                       .agenda-event
+                           img.img-circle.img-responsive.center-block(src='img/jurados/ccortez-foto.jpg', style='width: 100px;')
+                           h3 Cristian Cortez
+                         div
+                           h5 Anyandgo: The new horizon
+                           | Programación
+                   
+                   td.agenda-events
+                       .agenda-event
+                         | After party 
+                   // Single event in a single day
+                   tr
+                     td.agenda-date(rowspan='1')
+                       .dayofmonth 26
+                       |                             
+                       .dayofweek Saturday
+                       |                             
+                       .shortdate.text-muted July, 2014
+                     |                         
+                     td.agenda-time
+                       | 14:00 - 18:00 HS
+                     |                         
+                     td.agenda-events.speaker
+                       .agenda-event
+                         Durante la segunda jornada los equipos participantes organizan las tareas a realizar y desarrollan sus proyectos.
+  
+                   // Multiple events in a single day (note the rowspan)
+                   tr
+                     td.agenda-date(rowspan='3')
+                       .dayofmonth 14
+                       |                             
+                       .dayofweek Sábado
+                       |                             
+                       .shortdate.text-muted Noviembre, 2015
+                     |                         
+                     td.agenda-time
+                       | 14:00 - 19:00 HS
+                     |                         
+                     td.agenda-event.speaker
+                       .agenda-event
+                           img.img-circle.img-responsive.center-block(src='img/jurados/amotta-foto.jpg', style='width: 100px;')
+                           h3 Alejandro Motta
+                         div
+                           h5 Charla: El mundo de los negocios
+                           | Negocios en Argentina
+                   |                     
+                   tr
+                     td.agenda-time
+                       | 15:00 - 16:00 HS
+                     |                         
+                     td.agenda-event.speaker
+                       .agenda-event
+                           img.img-circle.img-responsive.center-block(src='img/jurados/yibarra-foto.jpg', style='width: 100px;')
+                           h3 Yanina Ibarra
+                         div
+                           h5 Charla2: descripción
+                           | Usabilidad
+                   |                     
+                   tr
+                     td.agenda-time
+                       | 16:00 - 17:00 HS
+                     |                         
+                     td.agenda-event.speaker
+                       .agenda-event
+                           img.img-circle.img-responsive.center-block(src='img/jurados/ccortez-foto.jpg', style='width: 100px;')
+                           h3 Cristian Cortez
+                         div
+                           h5 Anyandgo: The new horizon
+                           | Programación
+                   
+                   td.agenda-events
+                       .agenda-event
+                         | After party 
   .arrow-separator.arrow-white
   .row.color-3
     .col-sm-8.col-sm-offset-2.con-social-networks
