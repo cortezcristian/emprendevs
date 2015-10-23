@@ -20,6 +20,14 @@ block content
           a(href="https://www.google.com.ar/maps/place/Grupo+Polo+Tecnologico+Rosario+S.H./@-32.9474163,-60.6353579,17z/data=!4m6!1m3!3m2!1s0x95b7ab195f405e7d:0xe3d4a9ba0c7fe007!2sGrupo+Polo+Tecnologico+Rosario+S.H.!3m1!1s0x95b7ab195f405e7d:0xe3d4a9ba0c7fe007")
             i.fa.fa-map-marker.fa-fw
             | Maipú 835, Polo Tecnológico Rosario
+        p.sub-line.text-center
+          a(href="##premios").animated.bounce.infinite 
+            i.ion-trophy
+            |  Premios 
+          span(style="padding: 0 10px 0 5px; margin: 0") ·
+          a(href="##agenda")
+            i.ion-ios-calendar-outline
+            |  Agenda 
   .arrow-separator.arrow-white
   .row.color-1
     .col-sm-12
@@ -366,7 +374,7 @@ block content
   .row.color-3
     .col-sm-8.col-sm-offset-2.con-social-networks
       section.neck-step-7
-        h2 
+        h2#agenda 
           i.ion-ios-calendar-outline
           |  Agenda 
         div
@@ -487,10 +495,9 @@ block content
                            i.ion-trophy
                            |  Premiación y cierre
           // Agenda end 
-        h2 
+        h2#premios 
           i.ion-trophy
           |  Premios 
-        h2 En breve anunciaremos más premios, también habra sorteos y sorpresas!! 
         .table-responsive.premios
            table.table.table-condensed
              thead
@@ -539,6 +546,8 @@ block content
                    p 
                     | Valor: $599 anual - cortesía de Donweb
         
+        h2 En breve anunciaremos más premios, también habrá sorteos y sorpresas!! 
+
         h2 ¿Te interesa conocer novedades sobre el evento?
         ul.list-inline.social-networks-list
           li
