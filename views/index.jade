@@ -20,6 +20,14 @@ block content
           a(href="https://www.google.com.ar/maps/place/Grupo+Polo+Tecnologico+Rosario+S.H./@-32.9474163,-60.6353579,17z/data=!4m6!1m3!3m2!1s0x95b7ab195f405e7d:0xe3d4a9ba0c7fe007!2sGrupo+Polo+Tecnologico+Rosario+S.H.!3m1!1s0x95b7ab195f405e7d:0xe3d4a9ba0c7fe007")
             i.fa.fa-map-marker.fa-fw
             | Maipú 835, Polo Tecnológico Rosario
+        p.sub-line.text-center
+          a(href="##premios").animated.bounce.infinite 
+            i.ion-trophy
+            |  Premios 
+          span(style="padding: 0 10px 0 5px; margin: 0") ·
+          a(href="##agenda")
+            i.ion-ios-calendar-outline
+            |  Agenda 
   .arrow-separator.arrow-white
   .row.color-1
     .col-sm-12
@@ -322,13 +330,13 @@ block content
             a(href="http://killabunnies.com.ar/", target="_blank")
               img(src="./auspiciantes/killabunnies.png")
           li
+            a(href="http://www.tecso.coop/", target="_blank")
+              img(src="./auspiciantes/tecso.png")
+          li
             a(href="http://www.erapm.com.ar/", target="_blank")
               img(src="./auspiciantes/era.png")
         h2 Institucionales
         ul.list-inline
-          li
-            a(href="http://www.pmi.org.ar/", target="_blank")
-              img(src="./institucionales/pmi.png")
           li
             a(href="http://www.rosario.gov.ar/", target="_blank")
               img(src="./institucionales/mr.png")
@@ -338,6 +346,16 @@ block content
           li
             a(href="http://www.moverse.org/", target="_blank")
               img(src="./institucionales/moverse.png")
+        ul.list-inline
+          li
+            a(href="http://www.cifasis-conicet.gov.ar/", target="_blank")
+              img(src="./institucionales/cifasis.png")
+          li
+            a(href="http://www.pmi.org.ar/", target="_blank")
+              img(src="./institucionales/pmi.png")
+          li
+            a(href="http://www.frro.utn.edu.ar/", target="_blank")
+              img(src="./institucionales/utnrosario.jpg")
         h2 Media Partners
         ul.list-inline
           li
@@ -359,12 +377,181 @@ block content
   .row.color-3
     .col-sm-8.col-sm-offset-2.con-social-networks
       section.neck-step-7
-        p.text-center
-          a.go-up(href="#")
-            i.ion-arrow-up-b
+        h2#agenda 
+          i.ion-ios-calendar-outline
+          |  Agenda 
+        div
+          // Agenda start
+          .agenda
+            .table-responsive
+               table.table.table-condensed.table-bordered
+                 thead
+                   tr
+                     th Día
+                     th Hora
+                     th Evento
+                 tbody
+                   // Multiple events in a single day (note the rowspan)
+                   tr
+                     td.agenda-date(rowspan='7')
+                       .dayofmonth 13
+                       .dayofweek Viernes
+                       .shortdate.text-muted Noviembre, 2015
+                     td.agenda-time
+                       | 13:30 - 14:00 HS
+                     td.agenda-event.speaker
+                       .agenda-event
+                         h3 
+                           i.ion-android-checkbox-outline
+                           |  Acreditación 
+                   tr
+                     td.agenda-time
+                       | 14:00 - 14:30 HS
+                     td.agenda-event.speaker
+                       .agenda-event
+                         h3 
+                           i.ion-ios-chatbubble
+                           |  Starting Point 
+                           span - Alejandro Motta
+                   tr
+                     td.agenda-time
+                       | 14:30 - 15:00 HS
+                     td.agenda-event.speaker
+                       .agenda-event
+                         h3 
+                           i.ion-ios-chatbubble
+                           |  Principios de Usabilidad 
+                           span - Yanina Ibarra
+                   tr
+                     td.agenda-time
+                       | 15:00 - 15:30 HS
+                     td.agenda-event.speaker
+                       .agenda-event
+                         h3 
+                           i.ion-ios-chatbubble
+                           |  Anyandgo MEAN Stack
+                           span - Cristian Cortez
+                   tr
+                     td.agenda-time
+                       | 15:30 - 16:00 HS
+                     td.agenda-event.speaker
+                       .agenda-event
+                         h3 
+                           i.ion-ios-chatbubble
+                           |  Cloud Computing 
+                   tr
+                     td.agenda-time
+                       | 16:00 - 16:30 HS
+                     td.agenda-event.speaker
+                       .agenda-event
+                         h3 
+                           i.ion-ios-chatbubble
+                           |  Presentación de los equipos
+                   tr
+                     td.agenda-time
+                       | 16:30 - 18:00 HS
+                     td.agenda-event.speaker
+                       .agenda-event
+                         h3 
+                           i.ion-code-working
+                           |  Comienza la hackathon 
+                   // Single event in a single day
+                   tr
+                     td.agenda-date(rowspan='1')
+                       .dayofmonth 14
+                       .dayofweek Sábado
+                       .shortdate.text-muted Noviembre, 2015
+                     td.agenda-time
+                       | 9:00 - 18:00 HS
+                     td.agenda-event.speaker
+                       .agenda-event
+                         h3(style="padding: 10px 0")
+                           i.ion-code-working
+                           |  Continua la hackathon 
+                   // Multiple events in a single day (note the rowspan)
+                   tr
+                     td.agenda-date(rowspan='3')
+                       .dayofmonth 15
+                       .dayofweek Domingo 
+                       .shortdate.text-muted Noviembre, 2015
+                     td.agenda-time
+                       | 9:00 - 16:30 HS
+                     td.agenda-event.speaker
+                       .agenda-event
+                         h3
+                           i.ion-code-working
+                           |  Continua la hackathon 
+                   tr
+                     td.agenda-time
+                       | 16:30 - 17:00 HS
+                     td.agenda-event.speaker
+                       .agenda-event
+                         h3
+                           i.ion-code-working
+                           |  El jurado delivera 
+                   tr
+                     td.agenda-time
+                       | 17:00 - 18:00 HS
+                     td.agenda-event.speaker
+                       .agenda-event
+                         h3
+                           i.ion-trophy
+                           |  Premiación y cierre
+          // Agenda end 
+        h2#premios 
+          i.ion-trophy
+          |  Premios 
+        .table-responsive.premios
+           table.table.table-condensed
+             thead
+               tr
+                 th 
+                 th
+                   p.text-center Premios
+             tbody
+               tr
+                 td(style="width:240px;")
+                   h3
+                     i.ion-ribbon-b
+                     |  Primer Puesto
+                   p(style="text-align:center") Elegido por el jurado
+                 td
+                   h4 Cloud server pack 1 (para el equipo): 
+                   p 
+                    | Descripción: 1 vCPU's, 1 GB RAM, 10 GB SSD Storage por un año. Sin licencias
+                   p 
+                    | Valor: $1250 anual - cortesía de Donweb
+                   h4 Plan de hosting basico sin dominio (cada cada uno de los integrantes): 
+                   p 
+                    | Valor: $599 anual - cortesía de Donweb
+
+        .table-responsive.premios
+           table.table.table-condensed
+             thead
+               tr
+                 th 
+                 th
+                   p.text-center Premios
+             tbody
+               tr
+                 td(style="width:240px;")
+                   h3
+                     i.ion-ribbon-a
+                     |  Popularidad 
+                   p(style="text-align:center") Elegido por votación
+                 td
+                   h4 Cloud server pack 1 (para el equipo): 
+                   p 
+                    | Descripción: 1 vCPU's, 1 GB RAM, 10 GB SSD Storage por un año. Sin licencias
+                   p 
+                    | Valor: $1250 anual - cortesía de Donweb
+                   h4 Plan de hosting basico sin dominio (cada cada uno de los integrantes): 
+                   p 
+                    | Valor: $599 anual - cortesía de Donweb
+        
+        h2 En breve anunciaremos más premios, también habrá sorteos y sorpresas!! 
+
         h2 ¿Te interesa conocer novedades sobre el evento?
-        p.text-center
-          a.button(href="http://goo.gl/forms/6QY3C0DQQc", target="_blank") Mantenerme al tanto
         ul.list-inline.social-networks-list
           li
             a(href="https://twitter.com/emprendevs/", target="_blank")
@@ -385,6 +572,9 @@ block content
           | &#8226; Aprendé, construí y divertite &#8226;
         p.sub-line.text-center
           a(href="https://docs.google.com/document/d/1ZEy6cX_3-LT4gJPxTU6_eT3JORd_tiulDJLi3h9dFHc/edit?usp=sharing", target="_blank") Bases y Condiciones de la Competencia 
+        p.text-center
+          a.go-up(href="#")
+            i.ion-arrow-up-b
   //.row
     .neck
       #main-carousel.carousel.carousel-bg.slide(data-ride='carousel', data-interval="30000", hero)
