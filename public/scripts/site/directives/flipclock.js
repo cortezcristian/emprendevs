@@ -12,9 +12,9 @@ angular.module('anyandgoApp')
       restrict: 'A',
       link: function postLink(scope, element, attrs) {
           if(typeof attrs.time === "undefined"){
-            attrs.time = moment("13/11/2015 9:00", "D/M/YYYY H:mm").diff(moment(), 'seconds'); 
+            attrs.time = moment("1/7/2016 9:00", "D/M/YYYY H:mm").diff(moment(), 'seconds');
           }
-        
+
           element.FlipClock(attrs.time, {
             clockFace: 'DailyCounter',
             language:'es-es',
