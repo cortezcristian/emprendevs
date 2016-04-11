@@ -18,7 +18,7 @@ body
       color: #ccc
       &:hover, &:active
         background: #16a085
-  h1.big-main-logo 
+  h1.big-main-logo
     font-size: 60px;
     text-align: center
     i
@@ -56,7 +56,7 @@ body
     margin: 0;
   .neck
     margin: 0
-    padding: 0 
+    padding: 0
     background-color: #2B2A28
     background-image:url('../img/bg-11-full.jpg');
     background-position: center
@@ -90,7 +90,7 @@ body
               font-size 45px
             p
               font-size 26px
-              text-align left 
+              text-align left
               span
                 display: block
             h2
@@ -188,7 +188,7 @@ body
             a
               color:#000
               background: #ccc
-              box-shadow: inset 0 0 10px #bebebe 
+              box-shadow: inset 0 0 10px #bebebe
               text-shadow: 1px 1px #EAEAEA
           a:hover
             color:#000
@@ -409,7 +409,7 @@ section.animated.fadeIn {
   .tech-auth0
     background-position: -761px -6px
   .tech-sails
-    background-position: -841px -6px 
+    background-position: -841px -6px
   .button
     display: inline-block;
     border: solid 2px #FFF;
@@ -429,7 +429,7 @@ section.animated.fadeIn {
   ul.fa-ul > li
     font-size: 18px;
     line-height: 26px;
-  
+
 // Jurado
 .jurado-con
   color: #fff
@@ -459,7 +459,7 @@ section.animated.fadeIn {
       background: #fff;
       color: #16A085;
       text-decoration: none;
-    
+
 // Criterios
 .criterios-con
   text-align: center
@@ -560,7 +560,7 @@ section.animated.fadeIn {
     color: #fff !important
 
 
-// Flip Clock 
+// Flip Clock
 .flip-clock-wrapper
   max-width: 650px
   margin: 10px auto
@@ -587,12 +587,12 @@ section.animated.fadeIn {
 
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-        
+
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 
 }
@@ -645,7 +645,7 @@ section.animated.fadeIn {
     padding: 20px 30px;
     min-height: 280px;
   }
-  
+
   // Social Networks Home
   .share-social {
     padding-bottom:20px;
@@ -735,7 +735,7 @@ section.animated.fadeIn {
     border-color: #EEE rgba(238,238,238,0) rgba(238,238,238,0) rgba(238,238,238,0);
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
   // Social Networks Home
@@ -745,14 +745,14 @@ section.animated.fadeIn {
   }
 }
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
 }
 
 
 /* Twitter Bootstrap 3.2.0 Callout CSS Styles */
-/* http://cpratt.co/twitter-bootstrap-callout-css-styles/ */ 
+/* http://cpratt.co/twitter-bootstrap-callout-css-styles/ */
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
@@ -867,20 +867,20 @@ section.animated.fadeIn {
   line-height: 36px;
   float: left;
   text-align: right;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 .agenda .agenda-date .shortdate {
-  font-size: 0.75em; 
+  font-size: 0.75em;
 }
 
 
 /* Times */
-.agenda .agenda-time { width: 140px; } 
+.agenda .agenda-time { width: 140px; }
 
 
 /* Events */
-.agenda .agenda-events {  } 
-.agenda .agenda-events .agenda-event {  } 
+.agenda .agenda-events {  }
+.agenda .agenda-events .agenda-event {  }
 
 
 /** Agenda Speaker **/
@@ -955,3 +955,68 @@ table td.speaker a.cta {
   p
     text-align:left
     font-size: 14px
+
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
