@@ -11,20 +11,23 @@ block content
             b Devs
         p.sub-line.text-center(style="margin-bottom:35px;")
           br
-          | La hackathon para programadores
+          | #{__("Una hackathon para programadores ")}
           i con espíritu emprendedor
         p.sub-line.text-center
           i.fa.fa-calendar.fa-fw
-          | 1 al 3 de Julio en
-          i.fa.fa-map-marker.fa-fw
-          | Buenos Aires
+          | 1 al 3 de Julio
+          //i.fa.fa-map-marker.fa-fw
+          //| Buenos Aires
+        p.sub-line.text-center
+          a.btn.active Español
+          a.btn English
   .arrow-separator.arrow-white
   .row.color-1
     .col-sm-12
       section.neck-step-2
-        p.text-center
+        //p.text-center
           a.button(href="https://goo.gl/bHiWIr", target="_blank", style="margin-bottom:5px;") Pre-inscribirse
-        p.text-center(style="padding-bottom: 60px; margin-bottom:20px; font-size:14px;")
+        //p.text-center(style="padding-bottom: 60px; margin-bottom:20px; font-size:14px;")
           span(style="color:#fff")
             i.ion-ios-information
             i  Podés pre-inscribirte incluso si todavia no tenes equipo
@@ -347,17 +350,17 @@ block content
         .auspiciantes-con ul.list-inline { zoom: 0.5; }
         .auspiciantes-con ul.list-inline.orgnizers { zoom: 1; }
       section.neck-step-6.auspiciantes-con
-        h2 Organizan
-        ul.list-inline.orgnizers
+        //h2 Organizan
+        //ul.list-inline.orgnizers
           li
             a(href="http://www.polotecnologico.net/", target="_blank")
               img(src="./sponsors/CFCH.png", style="max-width: 250px;")
           li
             a(href="http://accelone.com/", target="_blank")
               img(src="./img/logos/a1.png")
-        h2.hide Auspiciantes
-        p.text-center
-          span Buscamos auspiciantes para la Edición 2016
+        //h2 Auspiciantes
+        p.text-center(style="padding-top:40px;")
+          span(style="font-size:24px") Buscamos auspiciantes para la Edición 2016
         p.text-center
           a.button(href="mailto:emprendevs@gmail.com?subject=Solicitud para auspiciar el evento", target="_blank") Auspiciar el Evento
         h2 Auspiciantes 2015
@@ -699,7 +702,7 @@ block content
               i.ion-social-googleplus
         p.sub-line.text-center
           | &#8226; Aprendé, construí y divertite &#8226;
-        p.sub-line.text-center
+        //p.sub-line.text-center
           a(href="https://docs.google.com/document/d/1ZEy6cX_3-LT4gJPxTU6_eT3JORd_tiulDJLi3h9dFHc/edit?usp=sharing", target="_blank") Bases y Condiciones de la Hackathon
         p.text-center
           a.go-up(href="#")
