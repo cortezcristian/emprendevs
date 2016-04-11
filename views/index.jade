@@ -11,16 +11,16 @@ block content
             b Devs
         p.sub-line.text-center(style="margin-bottom:35px;")
           br
-          | #{__("Una hackathon para programadores ")}
-          i con espíritu emprendedor
+          | #{__("Una hackathon para developers ")}
+          i #{__("con espíritu emprendedor")}
         p.sub-line.text-center
           i.fa.fa-calendar.fa-fw
           | 1 al 3 de Julio
-          //i.fa.fa-map-marker.fa-fw
-          //| Buenos Aires
+          i.fa.fa-map-marker.fa-fw
+          | Buenos Aires
         p.sub-line.text-center
-          a.btn.active Español
-          a.btn English
+          a.btn.active(href='#', style="padding: 10px;margin: 8px 0;", langsupport="es-ar") Español
+          a.btn(href='#', style="padding: 10px;margin: 8px 0;", langsupport="en-us") English
   .arrow-separator.arrow-white
   .row.color-1
     .col-sm-12
@@ -151,7 +151,7 @@ block content
               i.fa-li.fa.fa-check-circle
               | Al finalizar el jurado elegirá a un ganador teniendo en cuenta los criterios de evaluación detallados en las
               | Bases y Condiciones de la Competencia
-        p.text-center
+        p.hide.text-center
           a.button(href="https://docs.google.com/document/d/1ZEy6cX_3-LT4gJPxTU6_eT3JORd_tiulDJLi3h9dFHc/edit?usp=sharing", target="_blank") Ver Bases y Condiciones
   .arrow-separator.arrow-themelight
   .row.color-1
@@ -350,8 +350,8 @@ block content
         .auspiciantes-con ul.list-inline { zoom: 0.5; }
         .auspiciantes-con ul.list-inline.orgnizers { zoom: 1; }
       section.neck-step-6.auspiciantes-con
-        //h2 Organizan
-        //ul.list-inline.orgnizers
+        h2 Organizan
+        ul.list-inline.orgnizers
           li
             a(href="http://www.polotecnologico.net/", target="_blank")
               img(src="./sponsors/CFCH.png", style="max-width: 250px;")
